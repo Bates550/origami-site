@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+import { CURRICULUM_URL } from "../constants.ts";
 
 export default function Home() {
   return (
@@ -10,6 +12,10 @@ export default function Home() {
 
       <main>
         <h1 className="title">805 Origami</h1>
+        <div className="links-container">
+          <Link href="/qr/curriculum">QR Code</Link>
+          <a href={CURRICULUM_URL}>Curriculum</a>
+        </div>
 
         <iframe
           src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=b2NkczBtaDRmdHRydDc3aWQyZ2dnYTIxcDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=1"
@@ -21,17 +27,17 @@ export default function Home() {
         ></iframe>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
+      <footer></footer>
 
       <style jsx>{`
+        .links-container {
+          padding: 1.5rem 0;
+        }
+
+        .links-container a {
+          padding: 0 1rem;
+        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -67,11 +73,6 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
         }
 
         .title a {

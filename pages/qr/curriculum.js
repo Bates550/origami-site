@@ -1,21 +1,15 @@
 import Image from "next/image";
 import curriculumQR from "../../public/qr/curriculum.png";
+import { CURRICULUM_URL } from "../../constants.ts";
 
 const CurriculumQR = () => {
   return (
     <>
       <h1>Origami Curriculum</h1>
       <p>Scan QR Code:</p>
-      <Image
-        src={curriculumQR}
-        alt="https://docs.google.com/document/d/1zYfA03vzZuM32DhBsXpkN6UoAOzaZXDDfSZi7IZHq4Y/edit?usp=sharing"
-      />
+      <Image src={curriculumQR} alt={CURRICULUM_URL} />
       <p>
-        Or click this{" "}
-        <a href="https://docs.google.com/document/d/1zYfA03vzZuM32DhBsXpkN6UoAOzaZXDDfSZi7IZHq4Y/edit?usp=sharing">
-          direct link
-        </a>
-        .
+        Or click this <a href={CURRICULUM_URL}>direct link</a>.
       </p>
     </>
   );
