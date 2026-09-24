@@ -1,0 +1,1 @@
+export const CURRICULUM_URL = "https://docs.google.com/document/d/1zYfA03vzZuM32DhBsXpkN6UoAOzaZXDDfSZi7IZHq4Y/edit?usp=sharing"
