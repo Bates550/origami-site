@@ -1,0 +1,13 @@
+.contentContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 8px 30px 0;
+  background-color: chartreuse;
+  min-height: 100dvh;
+}
+
+@media (max-width: 480px) {
+  .contentContainer {
+    padding: 8px 6px 0;
+  }
+}
