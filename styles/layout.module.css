@@ -1,9 +1,24 @@
+.backgroundContainer {
+  background-color: var(--color-paper-light);
+
+  /* background-image: url("/ricePaper.webp"); */
+  /* background-size: 300px; */
+  /* background-blend-mode: multiply; */
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
 .contentContainer {
   max-width: 800px;
   margin: 0 auto;
   padding: 8px 30px 0;
-  background-color: chartreuse;
   min-height: 100dvh;
+  /* border: 1px inset chartreuse;
+  border-top: none;
+  border-bottom: none; */
+  /* box-shadow: -4px 0px 2px -1px rgba(0, 0, 0, 0.15); */
+  /* border-right: 3px solid var(--color-fold-blue);
+  border-left: 3px solid var(--color-fold-red);
+  border-radius: 2px; */
 }
 
 @media (max-width: 480px) {

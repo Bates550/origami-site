@@ -4,6 +4,7 @@ import { CURRICULUM_URL } from "../constants.ts";
 import { Layout } from "../components/Layout.jsx";
 import { Calendar } from "../components/Calendar.jsx";
 import { InstagramFeed } from "../components/InstagramFeed.jsx";
+import styles from "/styles/home.module.css";
 
 export default function Home() {
   return (
@@ -13,15 +14,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <h1 className="title">805 Origami</h1>
-        <div className="links-container">
+        <div className={styles.title}>
+          <h1>805 Origami</h1>
+        </div>
+        <div className={styles.menu}>
           <Link href="/qr/curriculum">QR Code</Link>
-          <Link href="/gallery">Gallery</Link>
           <a href={CURRICULUM_URL}>Curriculum</a>
         </div>
 
-        <InstagramFeed />
-        <Calendar />
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Gallery</h2>
+          <InstagramFeed />
+        </section>
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Upcoming Meetups</h2>
+          <Calendar />
+        </section>
       </Layout>
       <footer></footer>
     </>

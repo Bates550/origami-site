@@ -3,7 +3,11 @@
    * Colors
    */
 
-  --color-chartreuse: chartreuse;
+  --color-paper-dark: #e2e2e2;
+  --color-paper-light: #f1f1f1;
+  --color-fold-blue: #6966ec;
+  --color-fold-red: #c75d5d;
+  --color-ink-blue: #002338;
 }
 
 * {
@@ -12,3 +16,18 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  color: var(--color-ink-blue);
+  background: var(--color-paper-light);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--color-ink-blue);
+    background: var(--color-paper-light);
+  }
+} */
