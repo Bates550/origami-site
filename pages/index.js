@@ -22,17 +22,15 @@ export default function Home() {
           <a href={CURRICULUM_URL}>Curriculum</a>
         </div>
 
-        <section className={styles.section}>
-          <div className={styles.triangle}></div>
-          <div className={styles.triangle2}></div>
-          {/* <div className={styles.paperFold}></div> */}
+        <section className={[styles.section, styles.triangleParent].join(" ")}>
+          <div class={styles.skewTriangle2}></div>
+          <div class={styles.skewTriangle}></div>
           <h2 className={styles.sectionTitle}>Gallery</h2>
           <InstagramFeed />
         </section>
-        <section className={styles.section}>
-          <div className={styles.triangle}></div>
-          <div className={styles.triangle2}></div>
-          {/* <div class={styles.paperFold}></div> */}
+        <section className={[styles.section, styles.triangleParent].join(" ")}>
+          <div class={styles.skewTriangle2}></div>
+          <div class={styles.skewTriangle}></div>
           <h2 className={styles.sectionTitle}>Upcoming Meetups</h2>
           <Calendar />
         </section>

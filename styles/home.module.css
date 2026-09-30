@@ -21,10 +21,21 @@
 
   /* position: relative;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-  clip-path: polygon(-5% 105%, 105% 105%, 105% -5%, 30px -0%, 0% 30px); */
+  clip-path: polygon(-5% 105%, 105% 105%, 105% -5%, var(--paper-fold-size)  -0%, 0% var(--paper-fold-size) ); */
 }
 
-.triangle {
+.triangleParent {
+  /* Needed for skewTriangle and borderTriangle */
+  clip-path: polygon(
+    -5% 105%,
+    105% 105%,
+    105% -5%,
+    var(--paper-fold-size) -0%,
+    0% var(--paper-fold-size)
+  );
+}
+
+.borderTriangle {
   width: 0;
   height: 0;
   border-left: 0px solid transparent;
@@ -35,7 +46,7 @@
   left: -1px;
 }
 
-.triangle2 {
+.borderTriangle2 {
   width: 0;
   height: 0;
   border-left: var(--paper-fold-size) solid transparent;
@@ -51,8 +62,8 @@
   content: "";
   display: block;
   position: absolute;
-  height: 30px;
-  width: 30px;
+  height: var(--paper-fold-size) ;
+  width: var(--paper-fold-size) ;
   background-color: var(--color-paper-light);
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
   top: -1px;
@@ -73,22 +84,34 @@
   left: -1px;
 } */
 
-.paperFold {
+.skewTriangle {
   position: absolute;
   top: -1px;
   left: -1px;
-  width: 45px;
-  height: 45px;
+  width: var(--paper-fold-size);
+  height: var(--paper-fold-size);
   background-color: var(--color-paper-light);
   transform-origin: 50% 50%;
-  transform: rotate(45deg) translateX(-32px);
   border-right: 1px solid var(--color-ink-blue);
-  clip-path: polygon(50% 0px, 0 78px, 100% 0px);
-  transform: skew(-45deg) translateX(-24px);
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  /* clip-path: polygon(50% 0px, 0 78px, 100% 0px); */
+  transform: skew(-45deg) translateX(calc(-1 * var(--paper-fold-size) / 2));
+}
+
+.skewTriangle2 {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: var(--paper-fold-size);
+  height: var(--paper-fold-size);
+  background-color: var(--color-paper-light);
+  transform-origin: 50% 50%;
+  border: 1px solid var(--color-ink-blue);
+  /* clip-path: polygon(50% 0px, 0 78px, 100% 0px); */
+  box-shadow: 3px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .sectionTitle {
   text-align: center;
   padding-bottom: 8px;
+  margin-bottom: 6px;
 }
