@@ -23,10 +23,16 @@ export default function Home() {
         </div>
 
         <section className={styles.section}>
+          <div className={styles.triangle}></div>
+          <div className={styles.triangle2}></div>
+          {/* <div className={styles.paperFold}></div> */}
           <h2 className={styles.sectionTitle}>Gallery</h2>
           <InstagramFeed />
         </section>
         <section className={styles.section}>
+          <div className={styles.triangle}></div>
+          <div className={styles.triangle2}></div>
+          {/* <div class={styles.paperFold}></div> */}
           <h2 className={styles.sectionTitle}>Upcoming Meetups</h2>
           <Calendar />
         </section>

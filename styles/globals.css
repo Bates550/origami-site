@@ -8,6 +8,8 @@
   --color-fold-blue: #6966ec;
   --color-fold-red: #c75d5d;
   --color-ink-blue: #002338;
+
+  --paper-fold-size: 30px;
 }
 
 * {
