@@ -18,14 +18,13 @@ export default function Home() {
           <h1>805 Origami</h1>
         </div>
         <div className={styles.menu}>
-          <Link href="/qr/curriculum">QR Code</Link>
           <a href={CURRICULUM_URL}>Curriculum</a>
         </div>
 
         <section className={[styles.section, styles.triangleParent].join(" ")}>
           <div class={styles.skewTriangle2}></div>
           <div class={styles.skewTriangle}></div>
-          <h2 className={styles.sectionTitle}>Gallery</h2>
+          <h2 className={styles.sectionTitle}>Recent Meetups and Folds</h2>
           <InstagramFeed />
         </section>
         <section className={[styles.section, styles.triangleParent].join(" ")}>
