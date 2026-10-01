@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Script from "next/script";
 
 export const InstagramFeed = () => {
@@ -9,6 +10,12 @@ export const InstagramFeed = () => {
         type="module"
         strategy="afterInteractive"
       />
+      <div style={{ paddingTop: "10px" }}>
+        From{" "}
+        <Link href="https://www.instagram.com/805origami/">
+          instagram@805origami
+        </Link>
+      </div>
     </>
   );
 };
