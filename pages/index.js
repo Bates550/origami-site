@@ -22,14 +22,14 @@ export default function Home() {
         </div>
 
         <section className={[styles.section, styles.triangleParent].join(" ")}>
-          <div class={styles.skewTriangle2}></div>
-          <div class={styles.skewTriangle}></div>
+          <div className={styles.skewTriangle2}></div>
+          <div className={styles.skewTriangle}></div>
           <h2 className={styles.sectionTitle}>Recent Meetups and Folds</h2>
           <InstagramFeed />
         </section>
         <section className={[styles.section, styles.triangleParent].join(" ")}>
-          <div class={styles.skewTriangle2}></div>
-          <div class={styles.skewTriangle}></div>
+          <div className={styles.skewTriangle2}></div>
+          <div className={styles.skewTriangle}></div>
           <h2 className={styles.sectionTitle}>Upcoming Meetups</h2>
           <Calendar />
         </section>
