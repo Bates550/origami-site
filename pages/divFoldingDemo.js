@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Layout } from "../components/Layout.jsx";
 import styles from "/styles/home.module.css";
+import { FoldedPaperContainer } from "../components/FoldedPaperContainer.jsx";
 
 function Content() {
   return (
@@ -30,18 +31,14 @@ export default function DivFoldingDemo() {
             stroke-width="2"
           />
         </svg> */}
-        <section className={[styles.section, styles.triangleParent].join(" ")}>
-          <div className={styles.borderTriangle}></div>
-          <div className={styles.borderTriangle2}></div>
+        <FoldedPaperContainer mode="borderTriangle">
           <h2 className={styles.sectionTitle}>Border Triangle</h2>
           <Content />
-        </section>
-        <section className={[styles.section, styles.triangleParent].join(" ")}>
-          <div class={styles.skewTriangle2}></div>
-          <div class={styles.skewTriangle}></div>
+        </FoldedPaperContainer>
+        <FoldedPaperContainer mode="skewTriangle">
           <h2 className={styles.sectionTitle}>Skew Triangle</h2>
           <Content />
-        </section>
+        </FoldedPaperContainer>
       </Layout>
       <footer></footer>
     </>

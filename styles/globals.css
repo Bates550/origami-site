@@ -9,6 +9,9 @@
   --color-fold-red: #c75d5d;
   --color-ink-blue: #002338;
 
+  /**
+   * FoldedPaperContainer
+   */
   --paper-fold-size: 30px;
 }
 

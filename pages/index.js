@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Link from "next/link";
 import { CURRICULUM_URL } from "../constants.ts";
 import { Layout } from "../components/Layout.jsx";
 import { Calendar } from "../components/Calendar.jsx";
 import { InstagramFeed } from "../components/InstagramFeed.jsx";
+import { FoldedPaperContainer } from "../components/FoldedPaperContainer.jsx";
 import styles from "/styles/home.module.css";
 
 export default function Home() {
@@ -21,18 +21,14 @@ export default function Home() {
           <a href={CURRICULUM_URL}>Curriculum</a>
         </div>
 
-        <section className={[styles.section, styles.triangleParent].join(" ")}>
-          <div className={styles.skewTriangle2}></div>
-          <div className={styles.skewTriangle}></div>
+        <FoldedPaperContainer>
           <h2 className={styles.sectionTitle}>Recent Meetups and Folds</h2>
           <InstagramFeed />
-        </section>
-        <section className={[styles.section, styles.triangleParent].join(" ")}>
-          <div className={styles.skewTriangle2}></div>
-          <div className={styles.skewTriangle}></div>
+        </FoldedPaperContainer>
+        <FoldedPaperContainer>
           <h2 className={styles.sectionTitle}>Upcoming Meetups</h2>
           <Calendar />
-        </section>
+        </FoldedPaperContainer>
       </Layout>
       <footer></footer>
     </>

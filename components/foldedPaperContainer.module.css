@@ -1,0 +1,66 @@
+.section {
+  border: 1px solid var(--color-ink-blue);
+  margin-bottom: 20px;
+  padding: 12px 20px 20px;
+  background-color: var(--color-paper-dark);
+  border-radius: 2px;
+  position: relative;
+}
+
+.triangleParent {
+  /* Needed for skewTriangle and borderTriangle */
+  clip-path: polygon(
+    -5% 105%,
+    105% 105%,
+    105% -5%,
+    var(--paper-fold-size) -0%,
+    0% var(--paper-fold-size)
+  );
+}
+
+.borderTriangle {
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: var(--paper-fold-size) solid transparent;
+  border-top: var(--paper-fold-size) solid var(--color-paper-light);
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+
+.borderTriangle2 {
+  width: 0;
+  height: 0;
+  border-left: var(--paper-fold-size) solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: var(--paper-fold-size) solid var(--color-paper-light);
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  box-shadow: 2px 2px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.skewTriangle {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: var(--paper-fold-size);
+  height: var(--paper-fold-size);
+  background-color: var(--color-paper-light);
+  transform-origin: 50% 50%;
+  border-right: 1px solid var(--color-ink-blue);
+  transform: skew(-45deg) translateX(calc(-1 * var(--paper-fold-size) / 2));
+}
+
+.skewTriangle2 {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: var(--paper-fold-size);
+  height: var(--paper-fold-size);
+  background-color: var(--color-paper-light);
+  transform-origin: 50% 50%;
+  border: 1px solid var(--color-ink-blue);
+  box-shadow: 3px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
