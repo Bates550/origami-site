@@ -1,4 +1,4 @@
-import styles from "./FoldedPaperContainer.module.css";
+import styles from "./foldedPaperContainer.module.css";
 
 export const FoldedPaperContainer = (props) => {
   const { mode = "skewTriangle", ...rest } = props;
