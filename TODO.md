@@ -1,10 +1,10 @@
 ## TODO
 
-- Fix bottom padding
 - Add newsletter signup
 
 ## Done
 
+x Fix bottom padding
 x Update to next@16 to fix critical security warning
 x Make responsive layout
 x Add instagram feed
