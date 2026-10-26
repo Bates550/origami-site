@@ -1,11 +1,11 @@
 ## TODO
 
-- Update to next@16 to fix critical security warning
 - Fix bottom padding
 - Add newsletter signup
 
 ## Done
 
+x Update to next@16 to fix critical security warning
 x Make responsive layout
 x Add instagram feed
 x Use schedule view for calendar
