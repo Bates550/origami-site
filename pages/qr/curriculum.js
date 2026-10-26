@@ -7,7 +7,7 @@ const CurriculumQR = () => {
     <>
       <h1>Origami Curriculum</h1>
       <p>Scan QR Code:</p>
-      <Image src={curriculumQR} alt={CURRICULUM_URL} />
+      <Image src={curriculumQR} alt={CURRICULUM_URL} loading="eager" />
       <p>
         Or click this <a href={CURRICULUM_URL}>direct link</a>.
       </p>
