@@ -27,6 +27,11 @@ body {
   background: var(--color-paper-light);
 }
 
+p {
+  text-align: center;
+  padding-bottom: 12px;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

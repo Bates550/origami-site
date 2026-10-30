@@ -5,6 +5,7 @@ import { Calendar } from "../components/Calendar.jsx";
 import { InstagramFeed } from "../components/InstagramFeed.jsx";
 import { FoldedPaperContainer } from "../components/FoldedPaperContainer.jsx";
 import styles from "/styles/home.module.css";
+import { ButtondownForm } from "../components/ButtondownForm.jsx";
 
 export default function Home() {
   return (
@@ -28,6 +29,11 @@ export default function Home() {
         <FoldedPaperContainer>
           <h2 className={styles.sectionTitle}>Upcoming Meetups</h2>
           <Calendar />
+        </FoldedPaperContainer>
+        <FoldedPaperContainer>
+          <h2 className={styles.sectionTitle}>Stay Informed</h2>
+          <p>We'll send you a timely email reminder of the next meetup.</p>
+          <ButtondownForm />
         </FoldedPaperContainer>
       </Layout>
       <footer></footer>
