@@ -32,7 +32,10 @@ export default function Home() {
         </FoldedPaperContainer>
         <FoldedPaperContainer>
           <h2 className={styles.sectionTitle}>Stay Informed</h2>
-          <p>We'll send you a timely email reminder of the next meetup.</p>
+          <p>
+            We'll send you a timely email reminder of the next meetup. No spam.
+            No sale of your email. Unsubscribe at any time.
+          </p>
           <ButtondownForm />
         </FoldedPaperContainer>
       </Layout>
