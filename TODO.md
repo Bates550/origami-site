@@ -1,9 +1,10 @@
 ## TODO
 
-- Add newsletter signup
+- Add custom favicon
 
 ## Done
 
+x Add newsletter signup
 x Fix bottom padding
 x Update to next@16 to fix critical security warning
 x Make responsive layout
