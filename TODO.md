@@ -1,5 +1,7 @@
 ## TODO
 
+- Send buttondown emails from custom domain
+
 ## Done
 
 x Add custom favicon
