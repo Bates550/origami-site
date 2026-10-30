@@ -1,9 +1,8 @@
 ## TODO
 
-- Add custom favicon
-
 ## Done
 
+x Add custom favicon
 x Add newsletter signup
 x Fix bottom padding
 x Update to next@16 to fix critical security warning
