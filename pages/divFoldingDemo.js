@@ -20,7 +20,7 @@ export default function DivFoldingDemo() {
     <>
       <Head>
         <title>805 Origami</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
         {/* <svg viewBox="0 0 300 200" class="paper">

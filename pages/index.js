@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>805 Origami</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
         <div className={styles.title}>
